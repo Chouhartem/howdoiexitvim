@@ -1,0 +1,76 @@
+{
+  "how":[
+    {
+      "id":0,
+      "safe": 1,
+      "safe_info": "This will quit vim without saving the modification.",
+      "command": "esc+:+q+a+!",
+      "command_explained": "The <esc> should get the editor back to Normal mode. Then <:> enter a vim command and <q>+<a>+<!> says to quit all without saving.",
+      "weight":3
+    },
+    {
+      "id":1,
+      "safe": 0,
+      "safe_info": "It will save your file and exit vim.",
+      "command": "esc+:+x",
+      "command_explained": "The <Esc> should get the editor back to Normal mode. Then <:> enter a vim command and <x> says to save the current file and quit.",
+      "weight":3
+    },
+    {
+      "id":2,
+      "safe": 2,
+      "safe_info": "Progress might be loss, damages might happen to the computer.",
+      "command": "Unplug the computer and wait for the battery to drain (if any).",
+      "command_explained": "Unpluging the computer will kill the operating system and thus exit vim. It might be required to wait for the battery to drain if any.",
+      "weight":1
+    },
+    {
+      "id":3,
+      "safe": 1,
+      "safe_info": "Progress might be loss.",
+      "command": "esc+ctrl+z",
+      "command_explained": "This will put vim in the background, thus exiting vim. Note that vim is still running and it might be required to kill it.",
+      "weight":2
+    },
+    {
+      "id":4,
+      "safe": 0,
+      "safe_info": "It will save your file and exit vim.",
+      "command": "esc+Z+Z",
+      "command_explained": "The <esc> should get the editor back to Normal mode. Then <Z>+<Z> will save and quit.",
+      "weight":3
+    },
+    {
+      "id":5,
+      "safe": 2,
+      "safe_info": "Progress might be loss, damages might happen to the computer.",
+      "command": "Take a hammer, violently smash your computer into pieces.",
+      "command_explained": "Use the force, luke.",
+      "weight":1
+    },
+    {
+      "id":6,
+      "safe": 0,
+      "safe_info": "This will save your fille and quit vim.",
+      "command": "esc+:+w+q",
+      "command_explained": "The <esc> should get the editor back to Normal mode. Then <:> enter a vim command and <w>+<q>says to vim to save and quit.",
+      "weight":3
+    },
+    {
+      "id":7,
+      "safe": 1,
+      "safe_info": "This will quit vim without saving the modification.",
+      "command": "esc+:+c+q",
+      "command_explained": "The <esc> should get the editor back to Normal mode. Then <:> enter a vim command and <c>+<q> says to quit without saving with a non zero exit code.",
+      "weight":3
+    },
+    {
+      "id":8,
+      "safe": 1,
+      "safe_info": "It will exit without saving any modification.",
+      "command": "esc+Z+Q",
+      "command_explained": "The <esc> should get the editor back to Normal mode. Then <Z>+<Q> will quit without saving.",
+      "weight":3
+    }
+  ]
+}

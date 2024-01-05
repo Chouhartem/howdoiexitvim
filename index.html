@@ -2,12 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    <title>How do I exit (neo)vim?</title>
+    <link href="./tailwind.css" rel="stylesheet">
     <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">How do I exit (neo)vim?</h1>
+
+          <div class="divider"></div>
+
+          <section id="app">
+          </section>
+
+          <section id="command">
+          </section>
+
+          <br/>
+          <section id="command-explained">
+          </section>
+
+          <div class="divider"></div>
+
+          <h2 class='text-2xl font-bold'>Is it safe to use?</h2>
+          <br/>
+          <section id="safe">
+          </section>
+
+          <div class="divider"></div>
+          <input class="btn btn-primary" type="button" value="Encore" id="button"/>
+
+          <div class="divider"></div>
+          <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-200">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium">
+              More information about this application.
+            </div>
+            <div class="collapse-content"> 
+              <p>
+              This application was created with ❤️ and ☕ by <a class="link link-secondary" href="https://maggick.fr">maggick</a>.
+              It was inspired by the famous StackOverflow question:<br/>
+              <a class='link link-primary' href="https://stackoverflow.com/questions/11828270/how-do-i-exit-vim">
+                How do I exit vim?</a>
+              </p>
+              <br/>
+              <p>
+              Take a look at the <a class="link link-secondary" href="https://github.com/maggick/XXX">source code</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -8,7 +8,7 @@ inspired me to make a site that suggest ways to exit vim.
 Modify the [`src/data.json`](https://github.com/maggick/howdoiexitvim/blob/main/src/data.json) file.
 The structure for each addition is pretty straight-forward:
 
-```json
+```text
     {
       "id":<uniq and incremental id>,
       "safe": <0: will save the file and exit, 1: will exit without save, 2: might have side effect>,
